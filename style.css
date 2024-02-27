@@ -8,7 +8,7 @@ body{
 }
 
 #home{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), #0A4D68),url(images/IMG_1514.JPG);
+    background: linear-gradient(rgba(0, 0, 0, .7), #0A4D68),url(images/IMG_1514.JPG);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -27,10 +27,11 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 3% 15%;
+    padding: 1% 15%;
     display: flex;
     justify-content: space-between;
     align-items: center;  
+    background-color: #04161d4b;
 }
 span{
     color: #05BFDB;
@@ -65,7 +66,7 @@ span{
     font-family: "Rubik", sans-serif;
 }
 
-.home-content h3{
+.home-content h2{
     font-size: 32px;
     font-weight: 500;
     color: #05BFDB;
@@ -73,7 +74,7 @@ span{
 
 }
 
-.home-content h2{
+.home-content h1{
     font-size: 56px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -151,18 +152,28 @@ span{
 }
 
 
-.home-image{
-    opacity: .6;
-}
+
 
 img{
-    height: 400px;
+    height: 500px;
     width: 400px;
+    border-radius: 8px;
+    box-shadow: inset 400px 400px 400px 400px #0A4D68;
 }
 
-/* #back{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #008496),url(images/1.JPG);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-} */
+
+
+#about{
+    display: flex;
+    padding: 3% 15%;
+    margin: 3% 0;
+    align-items: center;
+    justify-content: space-between;
+    color:#0A4D68;
+}
+.myself{
+    line-height: 1.8;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
