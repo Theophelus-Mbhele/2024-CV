@@ -156,100 +156,256 @@ span{
 }
 
 
+/* this section is the about */
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 3% 15%;
 
 
-img{
-    height: 500px;
-    width: 400px;
-    border-radius: 8px;
+}
+
+.about .heading{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 3%;
+    text-align: center;
+    color: #0A4D68;
+}
+.about .about-img{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 2%;
+
+}
+.about-img .circle-spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #05BFDB;
+    border-right: 3px solid #05BFDB;
+    padding: 55%;
+}
+
+.about-img img{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 2px solid #0A4D68;
     box-shadow: inset 400px 400px 400px 400px #0A4D68;
 }
 
-
-
-#about{
-    display: flex;
-    padding: 3% 15%;
-    margin: 3% 0;
-    align-items: center;
-    justify-content: space-between;
-    color:#0A4D68;
+.about-content{
+    text-align: center;
+    
 }
-.myself{
-    line-height: 1.8;
-    margin-right: 100px;
-    margin-top: 30px;
+.about-content h3{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0A4D68;
+    
+}
+.about-content p{
+    color: #0A4D68;
+    font-size: 16px;
+    margin: 3% 0 5%;
     text-align: justify;
 }
 
+
+/* this section is about my education and experience */
 .education{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 3% ;
+    padding: 5% 15%;
     min-height: auto;
+    background-color: #0A4D68;
+}
+.education h2{
+    color: white;
+    margin-bottom: 3%;
+    font-size: 38px;
+    font-weight: 700;
 }
 
 .education .education-row{
     display: flex;
     flex-wrap: wrap;
-    gap: 1%;
+    gap: 5%;
 }
 
 .education-row .education-column{
-    flex: 1 1 10px;
+    flex: 1 1 25%;
 }
 
 .education-column .title{
-     font-size: 16px ;
-     margin: 0 0 5px 10px;
+     font-size: 20px ;
+     margin: 0 0 3% 5%;
+     color: #fff;
+     font-weight: 700;
 
 }
 .education-column .education-box {
-    border-left: 3px solid red;
+    border-left: 2px  solid #05BFDB;
+    padding-left: 3%;
+   
 }
 
 .education-box .education-content{
     position: relative;
     padding-left: 5px; 
-     
 }
 
-.education-content .contenet{
-    position: relative;
-    padding: 5px;
-    border: 2px solid blue;
-    border-radius: 10px;
-    margin-bottom: 10px;
-
-}
-.education-content .education-content::before {
+.education-box .education-content::before {
     content: '';
     position: absolute;
     top: 0;
     width: 20px;
     height: 20px;
-    background: blue;
+    background: #05BFDB;
     border-radius: 50% ;
-    left: -2px  ;
-
+    left: -5% ;
 }
+.education-content .contenet{
+    position: relative;
+    padding: 5px;
+    border: 2px solid #05BFDB;
+    border-radius: 7px;
+    margin-bottom: 5%;
+    /* overflow: hidden; */
+}
+
+
+/* .education-content .contenet::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: pink;
+    z-index: -1;
+}
+
+.education-content .contenet:hover::before{
+    width: 100%;
+} */
+
 
 .education-content .contenet .year {
     font-size: 14px;
-    color: pink;
+    color: #05BFDB;
     padding-bottom: 2px; 
 }
 
 .education-content .contenet .year i {
-    padding-right: 2px;
+    margin-right: 1.5%;
+    margin-bottom: 2%;
 }
 
 .education-content .contenet h3 {
     font-size: 16px;
+    color: #fff;
+    font-weight: 700;
 }
 .education-content .contenet p {
-    font-size: 14px;
+    font-size: 15px;
     padding-top: 5px;
+    color: #fff;
+}
+
+/* this section is the skills section */
+
+.skills{
+    padding: 5% 15%;
+}
+
+.header h2{
+    margin-bottom: 5%;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    color: #0A4D68;
+}
+
+/* .header::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: red;
+} */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    gap: 3%;
+}
+
+.skill-box{
+    cursor: pointer;
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: o.5rem;
+}
+.skill-icon img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skill-title h3{
+    font-size: 20px;
+    color: #0A4D68;
+    margin: 0.5rem;
+    text-align: justify;
+}
+.skill-box p{
+    color: #0A4D68;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 990px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 5px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        grid-template-columns: repeat(1fr);
+        padding: 2rem 50px;
+    }
+    
 }
