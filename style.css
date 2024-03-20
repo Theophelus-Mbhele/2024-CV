@@ -333,7 +333,7 @@ span{
 /* this section is the skills section */
 
 .skills{
-    padding: 5% 15%;
+    padding: 3% 15%;
 }
 
 .header h2{
@@ -359,11 +359,16 @@ span{
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     text-align: center;
-    gap: 3%;
+    gap: 5%;
+    padding-bottom: 5%;
 }
 
 .skill-box{
     cursor: pointer;
+    padding: 3%;
+    border: 2px solid #05BFDB;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px #05BFDB;
 }
 .skill-title{
     display: flex;
@@ -392,6 +397,13 @@ span{
 .skill-box p{
     color: #0A4D68;
     font-size: 15px;
+    text-align: justify;
+}
+
+.skill-box:hover{
+    background: #05bfdb9e;
+    transform: translateY(-15px);
+    transition: .5s;
 }
 
 @media screen and (max-width: 990px) {
